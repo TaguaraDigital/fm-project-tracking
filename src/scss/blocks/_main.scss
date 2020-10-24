@@ -94,11 +94,11 @@
         padding: .6rem 1.5rem;
         text-transform: uppercase;
         border-radius: 5px;
-        border: 1px solid ;
+        border-width:  1px;
+        border-style: solid;
 
         &:hover {
             opacity: .5;
-            border-color: green;
         }
     }
 
@@ -110,8 +110,7 @@
     .btn--ghost{
         color: var(--grayish-blue);
         background: transparent;
-        border: 1px solid transparent;
-        border: 1px solid palevioletred;
+        border-color: transparent;
     }
 
     &__img {
