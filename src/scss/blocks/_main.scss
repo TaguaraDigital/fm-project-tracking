@@ -17,7 +17,7 @@
         
         @include table {
             --padding: calc(1.85rem + 10vw);
-            padding: 12.7rem var(--padding);
+            padding: 2.5rem var(--padding);
             
             grid-template-columns: repeat(2,1fr);
             grid-template-areas: "body images"
@@ -41,7 +41,7 @@
         color: var(--dark-grayish-blue);
         span {
             font-weight: 700;
-            padding: .2rem .6rem;
+            padding: .1rem .6rem;
             letter-spacing: normal;
             color: white;
             background-color: var(--very-dark-blue);
@@ -56,6 +56,20 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
         text-transform: uppercase;
+
+        @include table{
+            font-size: 3.55rem;
+        }
+    }
+
+    &__txt {
+        width: 90%;
+        line-height: 1.5;
+        
+        @include table {
+            width: 60%;
+
+        }
     }
     
     &__buttons{
@@ -64,12 +78,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
+        @include table {
+            justify-content: flex-start;
+        }
     }
 
     .btn {
         font-family: var(--ff-title);
         font-weight: 700;
-        padding: .5rem 1.2rem;
+        padding: .6rem 1.5rem;
         text-transform: uppercase;
         border-radius: 5px;
     }
@@ -90,6 +108,11 @@
         height: 120%;
         position: relative;
         grid-area: images;
+
+        @include table {
+            width: 180%;
+        }
+
 
         &::before {
             content: '';

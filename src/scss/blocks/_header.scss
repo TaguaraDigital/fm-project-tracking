@@ -7,6 +7,7 @@
     align-items: center;
     
     @include laptop {
+      height: 9rem;
         padding: 0 10em;  
     }
 }
@@ -18,6 +19,10 @@
     img {
         display: block;
         width: 100%;
+    }
+
+    @include table {
+       width: 32px;
     }
 }
  
@@ -90,6 +95,7 @@
 }
  
 .nav__item{
+   font-family: var(--ff-title);
    text-align: center;
    width: 100%;
    padding: 0 2rem;
