@@ -6,6 +6,20 @@
     justify-content: space-between;
     align-items: center;
     
+    &::before {
+      content: '';
+     
+      width: 50%;
+      height: 52.5%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: var(--light-grayish-blue);
+      border-bottom-left-radius: 3rem;
+  }
+
+
     @include laptop {
       height: 9rem;
         padding: 0 10em;  
