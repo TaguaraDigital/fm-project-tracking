@@ -94,16 +94,16 @@
         padding: .6rem 1.5rem;
         text-transform: uppercase;
         border-radius: 5px;
+        border: 1px solid transparent;
 
         &:hover {
             opacity: .7;
         }
     }
-    
+
     .btn--red{
         color: white;
         background: var(--red);
-        border: 1px solid var(--red);
     }
 
     .btn--ghost{
