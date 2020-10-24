@@ -90,6 +90,10 @@
         padding: .6rem 1.5rem;
         text-transform: uppercase;
         border-radius: 5px;
+
+        &:hover {
+            opacity: .7;
+        }
     }
     .btn--red{
         color: white;

@@ -119,7 +119,9 @@
     
    &--active, 
    &:hover {
-      color: var(--dark-violet);
+      color: var(--red);
+      border-bottom: 1px solid var(--dark-grayish-blue);
+
    }
  
    @include table {
