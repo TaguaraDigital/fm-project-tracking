@@ -68,7 +68,7 @@
    }
  
    @include table {
-      width: 40%;
+      width: 50%;
       height: 9rem;
       top: 0;
       left: 60%;
@@ -80,6 +80,11 @@
       box-shadow: none;
       background-color: transparent;
    }
+   
+   @include laptop {
+      width: 50%;
+   }
+
 }
  
 .nav__list{
@@ -136,7 +141,7 @@
  
    @include table {
       width: fit-content;
-      margin-right: 1rem;
+      margin-right: .2rem;
       padding: 1rem 1rem;
       font-size: .9rem;
       line-height: 1;
